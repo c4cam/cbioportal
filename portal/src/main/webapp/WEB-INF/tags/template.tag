@@ -17,9 +17,9 @@
 
 <html class="cbioportal-frontend">
 <head>
-    
+
 <title>${title}</title>
-    
+
 <link rel="icon" href="images/cbioportal_icon.png"/>
 <jsp:include page="/WEB-INF/jsp/global/frontend_config.jsp" />
 <link rel="stylesheet" href="css/header.css?<%=GlobalProperties.getAppVersion()%>" />
@@ -32,42 +32,37 @@ String bodyClasses = "";
 
 if (fixedWidth == "true") {
     bodyClasses += "fixedWidth";
-} 
+}
 if (twoColumn == "true" ||  defaultRightColumn == "true") {
     bodyClasses += " twoColumn";
-} 
+}
 if (noMargin == "true") {
     bodyClasses += " noMargin";
-} 
+}
 if (cssClass != null) {
     bodyClasses += " " + cssClass;
 }
 %>
-    
+
 </head>
-    
+
     <body class="<%=bodyClasses.trim()%>">
 
-    
+
     <div class="pageTopContainer">
     <div class="contentWidth">
         <jsp:include page="/WEB-INF/jsp/global/header_bar.jsp" />
     </div>
     </div>
-    
+
     <div class="contentWrapper">
             <div class="contentWidth">
             <div id="mainColumn"><jsp:invoke fragment="body_area"/></div>
-            
-            <c:if test="${defaultRightColumn == true || twoColumn==true}">
-                <div id="rightColumn"><jsp:invoke fragment="right_column"/></div>
-            </c:if>
-           
             </div>
     </div>
-    
+
     </div>
-    
+
     <jsp:include page="/WEB-INF/jsp/global/footer.jsp" />
 
     <c:if test="${defaultRightColumn == true}">
@@ -77,8 +72,8 @@ if (cssClass != null) {
 
         </script>
     </c:if>
-    
-    
+
+
     <script>
     // mark nav item as selected
     $(document).ready(function() {
@@ -97,6 +92,6 @@ if (cssClass != null) {
     </script>
 
     <jsp:include page="/WEB-INF/jsp/global/js_include_analytics_and_email.jsp" />
-    
+
     </body>
 </html>
