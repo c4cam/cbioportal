@@ -107,7 +107,7 @@
             <configuration>
               <artifactItems>
                 <artifactItem>
-                  <groupId>com.github.mrc-cu</groupId>
+                  <groupId>com.github.MRC-CU</groupId>
                   <artifactId>cbioportal-frontend</artifactId>
                   <version>v2.0.1</version>
                   <type>jar</type>
