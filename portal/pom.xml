@@ -109,7 +109,7 @@
                 <artifactItem>
                   <groupId>com.github.MRC-CU</groupId>
                   <artifactId>cbioportal-frontend</artifactId>
-                  <version>v2.0.1</version>
+                  <version>occams-SNAPSHOT</version>
                   <type>jar</type>
                   <outputDirectory>.</outputDirectory>
                   <excludes>*index*</excludes>
